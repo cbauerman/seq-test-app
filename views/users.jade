@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    h1 Users
+    
+    for user in users
+        li= user.name
+    
+    else
+        h2 No Users!

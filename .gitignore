@@ -48,3 +48,6 @@ Temporary Items
 
 # Node modules
 /node_modules
+
+#TSD ignores
+/typings
