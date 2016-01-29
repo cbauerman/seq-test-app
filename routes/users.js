@@ -43,4 +43,18 @@ router.get('/reset', function(req, res, next) {
   
 });
 
+router.get('/as', function(req, res, next) {
+    
+    models.User.findAll({
+        attributes: ['name', ['name', 'eman']]
+    }).then(function(users) {
+        console.log(users);
+        res.render('users', {
+            users: users
+        });
+    });
+  
+  
+});
+
 module.exports = router;
